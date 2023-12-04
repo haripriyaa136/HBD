@@ -1,0 +1,91 @@
+<html>
+    <head>
+      <title>Happy Birthday!</title>
+    <style>
+     
+       @keyframes mymove {
+        from {top: 0%;}
+        to {top: 25%;}
+      }
+      @keyframes sizechange {
+        from {width:25%;height:50%;}
+        to {width:30%;height:60%;}
+      }
+      
+        .padding{padding:8px 16px!important}
+        .display-right{position:absolute;top:50%;right:15%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+
+        .bottomleft {
+            position: absolute;
+            top: 10%;
+            left: 4%;
+            animation: mymove 4s;
+            animation-iteration-count: infinite;
+            
+          }
+         
+          .bottomright{
+            position:absolute;
+            top: 53%;
+            left : 2%;
+            
+          }
+          #gradient-txt{
+            -webkit-background-clip: text;
+            background-image:linear-gradient(90deg,red,blue);
+            background-clip:text;
+            color:transparent;
+          } 
+          #openme{
+            font-family: "Lucida Console", "Courier New", monospace;
+            color:white;
+            font-size:3px;
+            position:absolute;
+            top: 2%;
+            left : 1%;
+
+          }
+         
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:15%;
+            margin-bottom:15%;
+            width: 25%;
+            height:50%;
+            animation-duration: 5s;
+            animation-name: sizechange;
+            animation-iteration-count: 1;
+          }
+        body {
+            background-color:palevioletred;
+          }
+         
+    </style>
+    </head>
+    
+    <body>
+        
+            <div class="bottomleft" >
+                <img id="catgif" src="catgif.gif" width="70%" height="70%" >
+            </div>
+           
+           
+            
+         <a href=""><img src="catwithcake.png" class="center"></a> 
+         <div class="bottomright" >
+          <p style="font-size:100%" id="openme" >Open me!</p>
+          <a href="HappyBirthday.html"><img src="giftboxes.jpg" width="70%" height="70%" ></a>
+      </div>
+
+    <div class="padding display-right" style="color:purple">
+      <p style="font-size:150%;" id="gradient-txt">&nbsp; Happy Birthday <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Girl...&#10024;</p>
+         
+      
+    
+    
+    </div>
+    <script src="happybirthdaypage.js"></script>
+    </body>
+</html>
